@@ -1,0 +1,61 @@
+{
+    "name": "yiisoft/yii2-psr-log-source",
+    "description": "A PSR LoggerInterface implementation that routes to the Yii logger",
+    "keywords": [
+        "yii2",
+        "symfony",
+        "loggerinterface",
+        "psr-3"
+    ],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2-psr-log-source/issues",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2-psr-log-sourcer"
+    },
+    "authors": [
+        {
+            "name": "Sam Mousa",
+            "email": "sam@mousa.nl"
+        }
+    ],
+    "require": {
+        "php": ">=8",
+        "yiisoft/yii2": ">=2.0.4",
+        "psr/log": "^3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.10",
+        "symplify/easy-coding-standard": "^10.1",
+        "vimeo/psalm": "^4.22"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "yii\\psr\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/yiisoft/yii2/Yii.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
