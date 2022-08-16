@@ -7,9 +7,8 @@ namespace yiiunit\extensions\psr;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LogLevel;
-use yii\psr\Logger;
 use yii\log\Logger as YiiLogger;
-
+use yii\psr\Logger;
 
 /**
  * @covers \yii\psr\Logger

@@ -1,4 +1,5 @@
 <?php
+
 namespace yii\psr;
 
 use Psr\Log\InvalidArgumentException;
@@ -44,7 +45,6 @@ final class Logger implements LoggerInterface
      * Logs with an arbitrary level.
      *
      * @param mixed $level
-     * @param \Stringable|string $message
      * @param mixed[] $context
      *
      * @throws \Psr\Log\InvalidArgumentException
