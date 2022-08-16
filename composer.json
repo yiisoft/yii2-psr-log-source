@@ -53,6 +53,9 @@
             "dev-master": "2.0.x-dev"
         }
     },
+    "provide": {
+        "psr/log-implementation": "3.0"
+    },
     "config": {
         "allow-plugins": {
             "yiisoft/yii2-composer": true
