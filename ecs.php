@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 use PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer;
+use PhpCsFixer\Fixer\Import\NoUnusedImportsFixer;
+use PhpCsFixer\Fixer\Strict\DeclareStrictTypesFixer;
 use Symplify\EasyCodingStandard\Config\ECSConfig;
 use Symplify\EasyCodingStandard\ValueObject\Option;
 use Symplify\EasyCodingStandard\ValueObject\Set\SetList;
@@ -21,6 +23,8 @@ return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->ruleWithConfiguration(ArraySyntaxFixer::class, [
         'syntax' => 'short'
     ]);
+    $ecsConfig->rule(NoUnusedImportsFixer::class);
+    $ecsConfig->rule(DeclareStrictTypesFixer::class);
 
 
 

@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace yii\psr;
 
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LoggerTrait;
 use Psr\Log\LogLevel;
-use Yii;
 use yii\log\Logger as YiiLogger;
 
 final class Logger implements LoggerInterface
