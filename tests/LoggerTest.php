@@ -18,7 +18,7 @@ final class LoggerTest extends TestCase
     public function testLogUsesMap(): void
     {
         $yiiLogger = $this->getMockBuilder(YiiLogger::class)->getMock();
-        $yiiLogger->expects($this->once())->method('log')->with('test', YiiLogger::LEVEL_INFO, );
+        $yiiLogger->expects($this->once())->method('log')->with('test', YiiLogger::LEVEL_INFO);
 
         $logger = new Logger($yiiLogger, [
             LogLevel::CRITICAL => YiiLogger::LEVEL_INFO,

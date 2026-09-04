@@ -29,10 +29,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.6",
-        "symplify/easy-coding-standard": "^10.1",
+        "symplify/easy-coding-standard": "^13.2",
         "vimeo/psalm": "^4.22",
         "captainhook/plugin-composer": "^5.3",
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^2.2",
         "ramsey/conventional-commits": "^1.3"
     },
     "repositories": [
